@@ -1,0 +1,40 @@
+/* Reset and base responsive styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Prevent horizontal scroll */
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Responsive tables */
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
